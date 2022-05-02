@@ -8,9 +8,7 @@ def solution(board, moves):
                 board[j][i-1] = 0
                 break
         if len(baguni)>1 and baguni[-1]==baguni[-2]:
-            print(baguni)
             baguni = baguni[:-2]
-            print(baguni)
             count += 2
     return count
 
