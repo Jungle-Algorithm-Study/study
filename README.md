@@ -1,11 +1,11 @@
 #  SWJungle-classA-algorithm-study
 
-## 🔍 RULES 
+## 🔍 Rules 
 - 매주 목요일 회의를 통해 선정된 문제를 일주일내에 풀이하고 PR
 - Git 공유시 MarkDown파일 또는 주석으로 풀이방법, 접근방법 등 기술
 - 사용언어 Python
 
-## 🧑‍🤝‍🧑 MEMBERS 
+## 🧑‍🤝‍🧑 Members
 |NAME|Github ID|Email|
 |----|---------|--------------------------|
 |김영천|[@youngcheon](https://github.com/youngcheon)|kimyoungcheon97@gmail.com|
