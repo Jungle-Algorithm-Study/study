@@ -14,3 +14,5 @@
 |배동준|[@baedonguri](https://github.com/baedonguri)|rmsdbraos21@naver.com|
 |이주형|[@opjoobe](https://github.com/opjoobe)|opjoobe@gmail.com|
 |송성곤|[@gon2gon2](https://github.com/gon2gon2)|ark5354@gmail.com|
+
+![image](https://user-images.githubusercontent.com/76905528/166692348-ee692b00-95a0-4b06-b42b-ac69e6f23164.png)
