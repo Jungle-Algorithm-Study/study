@@ -6,4 +6,4 @@ def solution(record):
             message.append((id_[0], {'L':'나갔','E':'들어왔'}[s[0]]))
         if s != 'Leave':
             user[id_[0]] = id_[1]
-    return [f"{user[i]}님이 {m}습니다." for i, m in message] 
+    return [f"{user[i]}님이 {m}습니다." for i, m in message]
