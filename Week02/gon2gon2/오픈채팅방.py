@@ -2,10 +2,9 @@
 # 종료: 14:20
 def solution(record):
     '''
-    1. 가장 마지막에 갱신된 정보만 필요하므로, answer에는 user_id와 user_name만 저장해둔다.
-    2. 
+    가장 마지막에 갱신된 정보만 필요하므로, answer에는 user_id와 user_name만 저장해둔다.
     '''
-    answer = []
+    user_log = []
     
     # 가장 최신의 닉네임을 저장해둘 딕셔너리
     id_to_name = dict()
