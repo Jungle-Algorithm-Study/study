@@ -1,15 +1,12 @@
 # 오픈채팅방 
-from collections import defaultdict
 def solution(record):
-    user = defaultdict(list)
-    message = []
+    user = {}; message = []
+    type_ = {'Leave':'나갔습니다.','Enter':'들어왔습니다.'}
     for i in record:
-        if 'Leave' in i:
-            status, id_ = i.split()
-            message.append((id_, "나갔습니다."))
-        else:
-            status, id_, nickname = i.split()
-            user[id_].append(nickname)
-            if status == 'Enter':
-                message.append((id_,"들어왔습니다."))
-    return [f"{user[m[0]][-1]}님이 {m[1]}" for m in message]
+        status, *id_ = i.split()
+        if not status == 'Change':
+            message.append((id_[0], type_[status]))
+        if not status == 'Leave':
+            user[id_[0]]=id_[1]
+    return [f"{user[m[0]]}님이 {m[1]}" for m in message]
+print(solution(["Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"]))
