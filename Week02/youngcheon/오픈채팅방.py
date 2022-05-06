@@ -1,3 +1,4 @@
+# 오픈채팅방 
 from collections import defaultdict
 def solution(record):
     user = defaultdict(list)
