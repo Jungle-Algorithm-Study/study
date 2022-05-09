@@ -1,7 +1,7 @@
 # 2시30분시작 #sol 16min #신고결과받기
 def solution(id_list, report, k):
     report_D = dict()
-    ans_D = dict([(id,0) for id in id_list])
+    ans_D = dict([(id,0) for id in id_list]) # {id:0 for id in id_list} 로도 가능
     for r in report:
         sender, receiver = r.split()
         if receiver in report_D.keys():
