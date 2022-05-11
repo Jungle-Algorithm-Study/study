@@ -1,4 +1,4 @@
-#  SWJungle-classA-Algorithm-Study
+#  SWJungle-4A-Algorithm-Study
 
 ## 🔍 Rules 
 - 매주 목요일 회의를 통해 선정된 문제를 일주일내에 풀이하고 PR
