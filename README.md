@@ -1,7 +1,7 @@
 #  SWJungle-Algorithm-Study
 
 ## 🔍 Rules 
-- 매일 오후 2시에 모여서 한문제 풀이, 전날 풀이했던 문제 Code Review.
+- 매일 오후 2시에 모여서 1문제 풀이, 전날 풀이했던 문제 Code Review.
 - Git 공유시 `Markdown`파일 또는 주석으로 풀이방법, 접근방법 등 기술하기
 - 사용언어 : `Python`
 
