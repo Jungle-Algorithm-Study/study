@@ -11,9 +11,9 @@ def solution(id_list, report, k):
     answer = []
     for id in id_list:
         if id in report_D.keys():
-            sender = set(report_D[id])
-            if len(sender) >= k:
-                for id in sender:
+            senders = set(report_D[id])
+            if len(senders) >= k:
+                for id in senders:
                     ans_D[id] += 1
     answer = list(ans_D.values())
     return answer

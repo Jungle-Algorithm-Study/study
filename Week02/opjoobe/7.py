@@ -30,3 +30,7 @@ def solution(dartResult):
 
 dartResult = "1S*2T*3S"
 print(solution(dartResult))
+
+hexint = '8'
+newhexint = int(hexint, 16)
+print(newhexint)
