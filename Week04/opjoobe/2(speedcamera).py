@@ -1,4 +1,4 @@
-# 5월 21일 오후 7시 # sol 10 min
+# 단속카메라 # 5월 21일 오후 7시 # sol 10 min
 
 def solution(routes):
     answer = 0
