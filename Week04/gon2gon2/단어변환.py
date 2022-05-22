@@ -35,7 +35,6 @@ def dfs(now, candidate, count, target):
 def solution(begin, target, words):
     if target not in words:
         return 0
-    answer = MAX_VALUE
-    answer = min(answer, dfs(begin, words, 0, target))
+    answer = dfs(begin, words, 0, target)
     
     return answer
