@@ -3,7 +3,7 @@ def solution(begin, target, words):
     visited = [0 for _ in range(len(words))]
     # 두 단어가 한자리만 다른지 체크하는 함수
     check = lambda w1,w2 : sum([1 for a,b in zip(w1,w2) if a==b])+1 == len(w1)
-    
+
     # dfs함수
     def dfs(word,count):
         if word == target: #dfs끝까지 도달하면 answer에 append
@@ -22,4 +22,4 @@ def solution(begin, target, words):
     # dfs 수행
     dfs(begin, 0)
     # 최소값 반환
-    return min(answer)
+    return min(answer) 
