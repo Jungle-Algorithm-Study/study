@@ -31,8 +31,9 @@ def solution(enroll, referral, seller, amount):
             # 다단계 타고 올라갔더니 "-" 면 break
             if relation[s] == '-':
                 break
+                
             # 다단계 타고 올라가서 다시 반복
             s = relation[s]
     
     # 돈 밸류값만 리턴
-    return [v for v in money.values()]
+    return [*money.values()]
