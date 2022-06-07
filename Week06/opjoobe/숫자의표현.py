@@ -8,9 +8,9 @@ def solution(n):
             i_tot += j
             if i_tot < n :
                 continue
-            if i_tot > n :
-                break
-            if i_tot == n:
-                answer += 1     
-
+            if i_tot == n :
+                answer += 1 
+            break
     return answer
+
+print(solution(315))
