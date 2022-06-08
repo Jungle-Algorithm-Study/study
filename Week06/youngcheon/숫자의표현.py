@@ -1,12 +1,18 @@
 def solution(n):
-    temp = [1]
-    count = 0
-    while temp[-1] <= n:
-        if sum(temp) < n:
-            temp.append(temp[-1]+1)
-        elif sum(temp) > n:
-            temp = temp[1:]
+    answer = 0
+    target = 1
+    start, end = 0, 1
+    while end <= n:
+        if target < n:
+            end += 1
+            target += end
+        elif target == n:
+            answer += 1
+            end += 1
+            target += end
         else:
-            count += 1
-            temp.append(temp[-1]+1)
-    return count
+            start += 1
+            target -= start
+    return answer
+
+print(solution(15))
