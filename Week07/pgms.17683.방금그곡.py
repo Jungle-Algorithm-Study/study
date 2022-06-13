@@ -10,9 +10,9 @@ def solution(m, musicinfos):
         long = len(sheet)
         
         sh, sm = map(int,start.split(':')) # start hour, start min
-        eh, em = map(int,end.split(':')) # end hour, end min
-        running = (eh - sh) * 60 + (em - sm) # running min 
-        
+        eh, em = map(int,end.split(':')) # end hour, end min        
+        running = ((eh * 60) + em) - ((sh * 60) + sm)
+    
         song = (sheet * (running // long)) + sheet[:(running % long)] # full sheet
         songs.append((title, running, song))
     
