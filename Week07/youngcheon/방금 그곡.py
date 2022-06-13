@@ -9,15 +9,13 @@ def change_note(note):
 def solution(m, musicinfos):
     m = change_note(m)
     answer = [["(None)",""]]
+    
     for i in musicinfos:
         info = list(i.split(','))
         sm,ss = map(int,info[0].split(':'))
         em,es = map(int,info[1].split(':'))
-        if sm <= em and ss <= es:
-            time = (em-sm)*60+(es-ss)
-        else:
-            # 예를들면 11:59 부터 12:01 까지라면 60에 59를 빼서 1을 더하는 식으로
-            time = (em-sm)*60-ss+es
+        
+        time = (em*60+es)-(sm*60+ss)
         
         title = info[2]
         note = change_note(info[3])
