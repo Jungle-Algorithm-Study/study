@@ -19,7 +19,7 @@ def solution(brown, yellow):
     cnt = brown + yellow
     
     for i in range(3, 100000) :
-        if cnt % i != 0 :
+        if cnt % i  :
             continue
         else :
             j = cnt // i
