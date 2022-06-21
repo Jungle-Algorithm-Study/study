@@ -1,13 +1,15 @@
 import heapq
+from math import inf
 
 def dijsktra(start,n):
-    min_fare = [int(1e9)] * (n+1)
+    min_fare = [inf] * (n+1)
     min_fare[0] = 0
+    min_fare[start] = 0
+    
     heap = [(0,start)]
     
     while heap :
         each_cost, now = heapq.heappop(heap)
-        
         if each_cost > min_fare[now] :
             continue
         
