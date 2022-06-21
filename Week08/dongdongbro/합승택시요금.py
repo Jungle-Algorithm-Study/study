@@ -4,8 +4,9 @@ from math import inf
 def dijsktra(start,n):
     min_fare = [inf] * (n+1)
     min_fare[0] = 0
+    ''' 1차 시도에서 빼먹은 부분 '''
     min_fare[start] = 0
-    
+    ''' 자기꺼는 0으로 해줬어야했는데... '''
     heap = [(0,start)]
     
     while heap :
