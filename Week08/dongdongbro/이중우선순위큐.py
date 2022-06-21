@@ -15,7 +15,7 @@ def solution(operations):
             heapq.heappush(max_heap, (-int_num, int_num))
         
         if inst == 'D' :
-            if len(min_heap) ==0 :
+            if len(min_heap) == 0 :
                 continue
             if int_num == 1 :
                 max_val = heapq.heappop(max_heap)
