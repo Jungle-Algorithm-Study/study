@@ -35,4 +35,4 @@ def solution(fees, records):
     for t in sorted(list(total.items())) : #값 계산
         rst.append(calc(fees, t[1]))
 
-    return 
+    return rst
