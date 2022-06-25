@@ -13,7 +13,7 @@ def solution(info, edges):
             isWolf = info[child]
             if visited[parent] and not visited[child]:
                 visited[child] = 1
-                dfs(sheep+(isWolf==0), wolf+(isWolf==1))
+                dfs(sheep+(not isWolf), wolf+isWolf)
                 visited[child] = 0
     dfs(1, 0)
     return max(answer)
