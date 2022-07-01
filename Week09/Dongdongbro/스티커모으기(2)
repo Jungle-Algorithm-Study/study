@@ -1,0 +1,18 @@
+def solution(sticker):
+    answer = 0
+    len_s = len(sticker)
+    if len_s == 1 :
+        return sticker[0]
+    dp = [0] * len_s
+    dp[0] = sticker[0]
+    dp[1] = dp[0]
+    for i in range(2,len_s-1) :
+        dp[i] = max(dp[i-1], dp[i-2] + sticker[i])
+    answer = max(dp)
+    dp2 = [0] * len_s
+    dp2[0] = 0
+    dp2[1] = sticker[1]
+    for i in range(2,len_s) :
+        dp2[i] = max(dp2[i-1], dp2[i-2] + sticker[i])
+    return max(answer, max(dp2))
+    
