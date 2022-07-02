@@ -6,6 +6,24 @@
 ''' LRU : Least Recently Used '''
 ''' LFU : Least Frequently Used '''
 
+# 두번째 풀이 (첫번째 풀이 개선)
+def solution(cacheSize, cities):
+    if cacheSize == 0:
+        return len(cities) * 5
+    answer = 0 # initial runtime
+    cache = []
+    for city in cities:
+        city = city.lower()
+        if city in cache: # HIT
+            answer += 1
+            cache.remove(city)
+        else: # MISS
+            answer += 5
+            if len(cache) == cacheSize: # CACHE full 
+                cache.pop(0) # Least Recently Used
+        cache.append(city) # cache current city
+    return answer # final runtime
+
 # 첫번째 풀이
 def solution(cacheSize, cities):
     if cacheSize == 0:
@@ -25,4 +43,4 @@ def solution(cacheSize, cities):
             else: # CACHE full
                 cache.pop(0) # Least Recently Used
                 cache.append(city)
-    return answer # final runtime
+    return answer # final runtime 
